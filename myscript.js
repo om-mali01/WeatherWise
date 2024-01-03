@@ -1,5 +1,5 @@
 require('dotenv').config();
-const api_key = process.env.API_KEY;
+api_key = process.env.API_KEY;
 
 // Base URL for the OpenWeatherMap API
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
