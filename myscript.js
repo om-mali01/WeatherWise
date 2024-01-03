@@ -4,8 +4,10 @@ const api_key = process.env.API_KEY;
 // Base URL for the OpenWeatherMap API
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
+mybtn = document.getElementById('button');
+
 // Function to perform the weather search
-function performSearch() {
+mybtn.onclick = function() {
     const cityName = document.getElementById('cityInput').value;
 
     const fullUrl = `${baseUrl}?q=${cityName}&appid=${api_key}`;
